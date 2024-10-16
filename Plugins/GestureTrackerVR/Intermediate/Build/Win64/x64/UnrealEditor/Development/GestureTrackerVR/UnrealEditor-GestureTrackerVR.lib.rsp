@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-GestureTrackerVR.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Intermediate\Build\Win64\x64\GestureTrackerTesteEditor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
+"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Plugins\GestureTrackerVR\Intermediate\Build\Win64\x64\UnrealEditor\Development\GestureTrackerVR\Module.GestureTrackerVR.cpp.obj"
+"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Plugins\GestureTrackerVR\Intermediate\Build\Win64\x64\UnrealEditor\Development\GestureTrackerVR\Default.rc2.res"
+/OUT:"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Plugins\GestureTrackerVR\Intermediate\Build\Win64\x64\UnrealEditor\Development\GestureTrackerVR\UnrealEditor-GestureTrackerVR.lib"

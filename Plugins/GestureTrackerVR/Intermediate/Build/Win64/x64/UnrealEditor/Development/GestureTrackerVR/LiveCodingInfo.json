@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.GestureTrackerVR.cpp.obj": [
+			"GestureMeshComponent.gen.cpp.obj",
+			"GestureTracker.gen.cpp.obj",
+			"GestureTrackerVR.init.gen.cpp.obj",
+			"Gesture.cpp.obj",
+			"GestureLibrary.cpp.obj",
+			"GestureMeshComponent.cpp.obj",
+			"GestureTracker.cpp.obj",
+			"GestureTrackerVR.cpp.obj",
+			"RecordGesture.cpp.obj"
+		]
+	}
+}
