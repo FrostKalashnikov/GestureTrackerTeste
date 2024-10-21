@@ -25,8 +25,65 @@ void AInputSimulatorActor::Tick(float DeltaTime)
 
 }
 
-void AInputSimulatorActor::SendInputToSimulate(FString Key)
+void AInputSimulatorActor::ClickToSimulate(FString FStringKey)
 {
-	TypeFString(Key);
+	// Conversão de FString para codigo virtual
+	const TCHAR* TcharKey = *FStringKey;
+	WORD VirtualKeyCode = VkKeyScan(TcharKey[0]);
+
+	// Configuração de sinal Input
+	INPUT input;
+	input.type = INPUT_KEYBOARD;
+	input.ki.wScan = 0;
+	input.ki.time = 0;
+	input.ki.dwExtraInfo = 0;
+	input.ki.wVk = VirtualKeyCode; // Código da tecla
+	input.ki.dwFlags = 0;
+
+	// Pressionar a tecla
+	SendInput(1, &input, sizeof(INPUT));
+
+	// Soltar a tecla
+	input.ki.dwFlags = KEYEVENTF_KEYUP;
+	SendInput(1, &input, sizeof(INPUT));
+}
+
+void AInputSimulatorActor::PressToSimulate(FString FStringKey)
+{
+	// Conversão de FString para codigo virtual
+	const TCHAR* TcharKey = *FStringKey;
+	WORD VirtualKeyCode = VkKeyScan(TcharKey[0]);
+
+	// Configuração de sinal Input
+	INPUT input;
+	input.type = INPUT_KEYBOARD;
+	input.ki.wScan = 0;
+	input.ki.time = 0;
+	input.ki.dwExtraInfo = 0;
+	input.ki.wVk = VirtualKeyCode; // Código da tecla
+	input.ki.dwFlags = 0;
+
+	// Pressionar a tecla
+	SendInput(1, &input, sizeof(INPUT));
+}
+
+void AInputSimulatorActor::ReleaseToSimulate(FString FStringKey)
+{
+	// Conversão de FString para codigo virtual
+	const TCHAR* TcharKey = *FStringKey;
+	WORD VirtualKeyCode = VkKeyScan(TcharKey[0]);
+
+	// Configuração de sinal Input
+	INPUT input;
+	input.type = INPUT_KEYBOARD;
+	input.ki.wScan = 0;
+	input.ki.time = 0;
+	input.ki.dwExtraInfo = 0;
+	input.ki.wVk = VirtualKeyCode; // Código da tecla
+	input.ki.dwFlags = 0;
+
+	// Soltar a tecla
+	input.ki.dwFlags = KEYEVENTF_KEYUP;
+	SendInput(1, &input, sizeof(INPUT));
 }
 

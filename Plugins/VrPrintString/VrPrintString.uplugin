@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.2",
+	"FriendlyName": "VR Print String",
+	"Description": "A simple plugin to help develop virtual reality experiences",
+	"Category": "Virtual Reality",
+	"CreatedBy": "Michel Brito",
+	"CreatedByURL": "https://www.artstation.com/michelbrito",
+	"DocsURL": "https://docs.google.com/document/d/1AWnIzeBZYkorqdU1Xb4aQBuvwz1Y0JJnQZUYowEBcRE/edit?usp=sharing",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/8a252462972b4b0383fcad6fc8a75f18",
+	"SupportURL": "",
+	"EngineVersion": "5.3.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "VrPrintString",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Android"
+			]
+		}
+	]
+}
