@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\vrprintstring\\intermediate\\build\\win64\\unrealeditor\\inc\\vrprintstring\\uht\\vrprintstring.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\intermediate\\build\\win64\\x64\\gesturetrackertesteeditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\vrprintstring\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\vrprintstring\\definitions.vrprintstring.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

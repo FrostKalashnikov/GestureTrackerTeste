@@ -1,0 +1,31 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrhmd\\module.oculusxrhmd.1.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\intermediate\\build\\win64\\x64\\gesturetrackertesteeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrhmd\\definitions.oculusxrhmd.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxreventcomponent.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxrhmd\\public\\oculusxreventcomponent.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxreventcomponent.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrfunctionlibrary.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxrhmd\\public\\oculusxrfunctionlibrary.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxrhmd\\public\\oculusxrhmdtypes.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrhmdtypes.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxrhmd\\public\\ioculusxrhmdmodule.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\headmounteddisplay\\public\\iheadmounteddisplaymodule.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\headmounteddisplay\\public\\headmounteddisplaytypes.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\headmounteddisplay\\public\\imotioncontroller.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\imotioncontroller.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\headmounteddisplaytypes.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrfunctionlibrary.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrhmd.init.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrhmdruntimesettings.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxrhmd\\public\\oculusxrhmdruntimesettings.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrhmd\\uht\\oculusxrhmdruntimesettings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

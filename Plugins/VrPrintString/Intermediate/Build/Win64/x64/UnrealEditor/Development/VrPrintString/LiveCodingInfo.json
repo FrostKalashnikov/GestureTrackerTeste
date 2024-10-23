@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.VrPrintString.cpp.obj": [
+			"VrPrintString.cpp.obj",
+			"VrPrintString_Actor.cpp.obj",
+			"VrPrintString_Library.cpp.obj",
+			"VrPrintString_Settings.cpp.obj",
+			"VrPrintString.init.gen.cpp.obj",
+			"VrPrintString_Actor.gen.cpp.obj",
+			"VrPrintString_Interface.gen.cpp.obj",
+			"VrPrintString_Library.gen.cpp.obj",
+			"VrPrintString_Settings.gen.cpp.obj"
+		]
+	}
+}

@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeGestureTrackerVR_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x4169E67D,
+				0x80432D0B,
 				0x9BBF2CE3,
 				METADATA_PARAMS(0, nullptr)
 			};
@@ -29,5 +29,5 @@ void EmptyLinkFunctionForGeneratedCodeGestureTrackerVR_init() {}
 		}
 		return Z_Registration_Info_UPackage__Script_GestureTrackerVR.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GestureTrackerVR(Z_Construct_UPackage__Script_GestureTrackerVR, TEXT("/Script/GestureTrackerVR"), Z_Registration_Info_UPackage__Script_GestureTrackerVR, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x4169E67D, 0x9BBF2CE3));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_GestureTrackerVR(Z_Construct_UPackage__Script_GestureTrackerVR, TEXT("/Script/GestureTrackerVR"), Z_Registration_Info_UPackage__Script_GestureTrackerVR, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x80432D0B, 0x9BBF2CE3));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

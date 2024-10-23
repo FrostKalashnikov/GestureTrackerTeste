@@ -53,9 +53,13 @@ void EmptyLinkFunctionForGeneratedCodeGestureMeshComponent() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureMeshComponent_Success_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Applies the sucessMaterial to the entire Gesture mesh\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureMeshComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Applies the sucessMaterial to the entire Gesture mesh" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureMeshComponent_Success_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureMeshComponent, nullptr, "Success", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureMeshComponent_Success_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureMeshComponent_Success_Statics::Function_MetaDataParams) };
@@ -96,9 +100,13 @@ void EmptyLinkFunctionForGeneratedCodeGestureMeshComponent() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Update the draw mesh and materials with new ones.\n    * Leave an input blank to leave it unchanged.\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureMeshComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update the draw mesh and materials with new ones.\nLeave an input blank to leave it unchanged." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureMeshComponent, nullptr, "UpdateMaterials", nullptr, nullptr, Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials_Statics::GestureMeshComponent_eventUpdateMaterials_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials_Statics::Function_MetaDataParams) };
@@ -152,8 +160,8 @@ void EmptyLinkFunctionForGeneratedCodeGestureMeshComponent() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureMeshComponent_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGestureMeshComponent_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UGestureMeshComponent_Success, "Success" }, // 2670402514
-		{ &Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials, "UpdateMaterials" }, // 3978135720
+		{ &Z_Construct_UFunction_UGestureMeshComponent_Success, "Success" }, // 148697504
+		{ &Z_Construct_UFunction_UGestureMeshComponent_UpdateMaterials, "UpdateMaterials" }, // 3989711991
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureMeshComponent_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -230,15 +238,15 @@ void EmptyLinkFunctionForGeneratedCodeGestureMeshComponent() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGestureMeshComponent);
 	UGestureMeshComponent::~UGestureMeshComponent() {}
-	struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGestureMeshComponent, UGestureMeshComponent::StaticClass, TEXT("UGestureMeshComponent"), &Z_Registration_Info_UClass_UGestureMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGestureMeshComponent), 3963952228U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UGestureMeshComponent, UGestureMeshComponent::StaticClass, TEXT("UGestureMeshComponent"), &Z_Registration_Info_UClass_UGestureMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGestureMeshComponent), 1087658364U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_1736282771(TEXT("/Script/GestureTrackerVR"),
-		Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_3985690834(TEXT("/Script/GestureTrackerVR"),
+		Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureMeshComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

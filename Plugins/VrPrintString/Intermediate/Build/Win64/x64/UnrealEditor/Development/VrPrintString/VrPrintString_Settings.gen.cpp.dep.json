@@ -1,0 +1,22 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\vrprintstring\\intermediate\\build\\win64\\unrealeditor\\inc\\vrprintstring\\uht\\vrprintstring_settings.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\intermediate\\build\\win64\\x64\\gesturetrackertesteeditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\vrprintstring\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\vrprintstring\\definitions.vrprintstring.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\vrprintstring\\source\\vrprintstring\\public\\vrprintstring_settings.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\coreuobject\\public\\assetregistry\\arfilter.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\vrprintstring\\intermediate\\build\\win64\\unrealeditor\\inc\\vrprintstring\\uht\\vrprintstring_settings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

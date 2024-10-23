@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-VrPrintString.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Intermediate\Build\Win64\x64\GestureTrackerTesteEditor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
+"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Plugins\VrPrintString\Intermediate\Build\Win64\x64\UnrealEditor\Development\VrPrintString\Module.VrPrintString.cpp.obj"
+"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Plugins\VrPrintString\Intermediate\Build\Win64\x64\UnrealEditor\Development\VrPrintString\Default.rc2.res"
+/OUT:"C:\Users\MichelBrito\Documents\Unreal Projects\GestureTrackerTeste\Plugins\VrPrintString\Intermediate\Build\Win64\x64\UnrealEditor\Development\VrPrintString\UnrealEditor-VrPrintString.lib"

@@ -27,6 +27,10 @@ void AInputSimulatorActor::Tick(float DeltaTime)
 
 void AInputSimulatorActor::ClickToSimulate(FString FStringKey)
 {
+	if (OnKeyPressEvent.IsBound())
+		OnKeyPressEvent.Broadcast(FStringKey);
+
+#if PLATFORM_WINDOWS
 	// Conversão de FString para codigo virtual
 	const TCHAR* TcharKey = *FStringKey;
 	WORD VirtualKeyCode = VkKeyScan(TcharKey[0]);
@@ -46,10 +50,15 @@ void AInputSimulatorActor::ClickToSimulate(FString FStringKey)
 	// Soltar a tecla
 	input.ki.dwFlags = KEYEVENTF_KEYUP;
 	SendInput(1, &input, sizeof(INPUT));
+#endif
 }
 
 void AInputSimulatorActor::PressToSimulate(FString FStringKey)
 {
+	if (OnKeyPressEvent.IsBound())
+		OnKeyPressEvent.Broadcast(FStringKey);
+
+#if PLATFORM_WINDOWS
 	// Conversão de FString para codigo virtual
 	const TCHAR* TcharKey = *FStringKey;
 	WORD VirtualKeyCode = VkKeyScan(TcharKey[0]);
@@ -65,10 +74,15 @@ void AInputSimulatorActor::PressToSimulate(FString FStringKey)
 
 	// Pressionar a tecla
 	SendInput(1, &input, sizeof(INPUT));
+#endif
 }
 
 void AInputSimulatorActor::ReleaseToSimulate(FString FStringKey)
 {
+	if (OnKeyPressEvent.IsBound())
+		OnKeyPressEvent.Broadcast(FStringKey);
+
+#if PLATFORM_WINDOWS
 	// Conversão de FString para codigo virtual
 	const TCHAR* TcharKey = *FStringKey;
 	WORD VirtualKeyCode = VkKeyScan(TcharKey[0]);
@@ -85,5 +99,6 @@ void AInputSimulatorActor::ReleaseToSimulate(FString FStringKey)
 	// Soltar a tecla
 	input.ki.dwFlags = KEYEVENTF_KEYUP;
 	SendInput(1, &input, sizeof(INPUT));
+#endif
 }
 

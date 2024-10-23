@@ -514,9 +514,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_ClearGestures_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Clear all recorded gestures\n    * Stops any recognition (but not recording)\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Clear all recorded gestures\nStops any recognition (but not recording)" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_ClearGestures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "ClearGestures", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_ClearGestures_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_ClearGestures_Statics::Function_MetaDataParams) };
@@ -572,10 +576,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_DrawGestureById_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Draws the gesture with the given id at the Gesture Tracker's current position and rotation.\n    * IMPORTANT: The drawResult must be destroyed manually, so it is recommended that you store a reference to it.\n    * @param name The id of the gesture to draw.\n    * @param mesh A mesh used for segments of the drawn gesture.\n    */" },
+#endif
 		{ "ExpandEnumAsExecs", "result" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Draws the gesture with the given id at the Gesture Tracker's current position and rotation.\nIMPORTANT: The drawResult must be destroyed manually, so it is recommended that you store a reference to it.\n@param name The id of the gesture to draw.\n@param mesh A mesh used for segments of the drawn gesture." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_DrawGestureById_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "DrawGestureById", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_DrawGestureById_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_DrawGestureById_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_DrawGestureById_Statics::GestureTracker_eventDrawGestureById_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_DrawGestureById_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_DrawGestureById_Statics::Function_MetaDataParams) };
@@ -641,10 +649,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_DrawGestureByName_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Draws the gesture with the given name at the Gesture Tracker's current position and rotation.\n    * If multiple Gestures with the same name exist only the first recorded will be drawn.\n    * IMPORTANT: The drawResult must be destroyed manually, so it is recommended that you store a reference to it.\n    * @param name The name of the gesture to draw.\n    * @param mesh A mesh used for segments of the drawn gesture.\n    */" },
+#endif
 		{ "ExpandEnumAsExecs", "result" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Draws the gesture with the given name at the Gesture Tracker's current position and rotation.\nIf multiple Gestures with the same name exist only the first recorded will be drawn.\nIMPORTANT: The drawResult must be destroyed manually, so it is recommended that you store a reference to it.\n@param name The name of the gesture to draw.\n@param mesh A mesh used for segments of the drawn gesture." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_DrawGestureByName_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "DrawGestureByName", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_DrawGestureByName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_DrawGestureByName_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_DrawGestureByName_Statics::GestureTracker_eventDrawGestureByName_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_DrawGestureByName_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_DrawGestureByName_Statics::Function_MetaDataParams) };
@@ -698,10 +710,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_FinishRecognition_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * End recognition and check for a successfully recognized gesture\n    * @param id The unique id of the recognized gesture\n    * @param name The non-unique name of the recognized gesture.\n    * @param recognitionDuration The time from StartRecognition to FinishRecognition in real seconds (not game time).\n    * @param lengthRatio The ratio of the tracked gesture length to the reference gesture length (e.g. 2 means the tracked gesture was twice as long as the recognized reference).\n    */" },
+#endif
 		{ "ExpandEnumAsExecs", "result" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "End recognition and check for a successfully recognized gesture\n@param id The unique id of the recognized gesture\n@param name The non-unique name of the recognized gesture.\n@param recognitionDuration The time from StartRecognition to FinishRecognition in real seconds (not game time).\n@param lengthRatio The ratio of the tracked gesture length to the reference gesture length (e.g. 2 means the tracked gesture was twice as long as the recognized reference)." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_FinishRecognition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "FinishRecognition", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_FinishRecognition_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_FinishRecognition_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_FinishRecognition_Statics::GestureTracker_eventFinishRecognition_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_FinishRecognition_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_FinishRecognition_Statics::Function_MetaDataParams) };
@@ -759,12 +775,16 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_FinishRecording_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Save the gesture being recorded. Fails if the gesture is too short or too long, or called while not recording.\n    * If you record using the same id as a previous recording, the previous recording will be overwritten.\n    * @param id The unique id to assign to the recorded gesture. Enter a negative number to have id automatically assigned.\n    * @param name (optional) A non unique name to assign to the recorded gesture.\n    * @param assignedId The id assigned to the recorded gesture. -1 if recording failed.\n    */" },
+#endif
 		{ "CPP_Default_id", "-1" },
 		{ "CPP_Default_name", "" },
 		{ "ExpandEnumAsExecs", "result" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Save the gesture being recorded. Fails if the gesture is too short or too long, or called while not recording.\nIf you record using the same id as a previous recording, the previous recording will be overwritten.\n@param id The unique id to assign to the recorded gesture. Enter a negative number to have id automatically assigned.\n@param name (optional) A non unique name to assign to the recorded gesture.\n@param assignedId The id assigned to the recorded gesture. -1 if recording failed." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_FinishRecording_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "FinishRecording", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_FinishRecording_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_FinishRecording_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_FinishRecording_Statics::GestureTracker_eventFinishRecording_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_FinishRecording_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_FinishRecording_Statics::Function_MetaDataParams) };
@@ -806,9 +826,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_GetGesturePath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * @param id The id of the gesture whose path we want\n    * @return A vector array describing the path of the specified gesture\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@param id The id of the gesture whose path we want\n@return A vector array describing the path of the specified gesture" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_GetGesturePath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "GetGesturePath", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_GetGesturePath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetGesturePath_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_GetGesturePath_Statics::GestureTracker_eventGetGesturePath_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetGesturePath_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_GetGesturePath_Statics::Function_MetaDataParams) };
@@ -846,9 +870,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_GetIds_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Returns an array containing the Ids of stored gestures\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns an array containing the Ids of stored gestures" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_GetIds_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "GetIds", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_GetIds_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetIds_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_GetIds_Statics::GestureTracker_eventGetIds_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetIds_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_GetIds_Statics::Function_MetaDataParams) };
@@ -883,9 +911,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_GetNumGestures_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Returns the number of stored gestures\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the number of stored gestures" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_GetNumGestures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "GetNumGestures", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_GetNumGestures_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetNumGestures_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_GetNumGestures_Statics::GestureTracker_eventGetNumGestures_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetNumGestures_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_GetNumGestures_Statics::Function_MetaDataParams) };
@@ -924,9 +956,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_GetPercentageComplete_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Get the current percentage complete of the gesture with the given id.\n    * i.e. If you're halfway through performing the gesture when this is called it will return .5\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the current percentage complete of the gesture with the given id.\ni.e. If you're halfway through performing the gesture when this is called it will return .5" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_GetPercentageComplete_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "GetPercentageComplete", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_GetPercentageComplete_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetPercentageComplete_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_GetPercentageComplete_Statics::GestureTracker_eventGetPercentageComplete_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetPercentageComplete_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_GetPercentageComplete_Statics::Function_MetaDataParams) };
@@ -961,9 +997,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Get the id of the current predicted gesture, or -1 if no gesture is predicted\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the id of the current predicted gesture, or -1 if no gesture is predicted" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "GetPredictedGestureId", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId_Statics::GestureTracker_eventGetPredictedGestureId_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId_Statics::Function_MetaDataParams) };
@@ -1001,9 +1041,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * @return A vector array describing the path of the currently predicted gesture\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@return A vector array describing the path of the currently predicted gesture" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "GetPredictedGesturePath", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath_Statics::GestureTracker_eventGetPredictedGesturePath_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath_Statics::Function_MetaDataParams) };
@@ -1062,10 +1106,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_LoadGestures_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Load gesture file, set as current recorded gestures\n    * Stops any recording/recognition\n    * @param filename The path/filename to load the gestures from within the content folder.\n    * @return true if the load was successful\n    */" },
+#endif
 		{ "ExpandEnumAsExecs", "result" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Load gesture file, set as current recorded gestures\nStops any recording/recognition\n@param filename The path/filename to load the gestures from within the content folder.\n@return true if the load was successful" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_LoadGestures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "LoadGestures", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_LoadGestures_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_LoadGestures_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_LoadGestures_Statics::GestureTracker_eventLoadGestures_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_LoadGestures_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_LoadGestures_Statics::Function_MetaDataParams) };
@@ -1124,10 +1172,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_SaveGestures_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Save the currently recorded gestures to file. The root directory is your game's content folder.\n    *\n    * NOTE: If you want to package default gestures with your game, save the gestures to their own directory\n    * and then add that directory to \"Project Settings > Packaging > Additional Non-Asset Directories to Package\".\n    * (e.g. save with a filename \"Gestures/default_right_gestures\" and then add the \"Gestures\" directory to this list)\n    * @param filename The path/filename to save the gestures to within the content folder.\n    * @return true if the save was successful\n    */" },
+#endif
 		{ "ExpandEnumAsExecs", "result" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Save the currently recorded gestures to file. The root directory is your game's content folder.\n\nNOTE: If you want to package default gestures with your game, save the gestures to their own directory\nand then add that directory to \"Project Settings > Packaging > Additional Non-Asset Directories to Package\".\n(e.g. save with a filename \"Gestures/default_right_gestures\" and then add the \"Gestures\" directory to this list)\n@param filename The path/filename to save the gestures to within the content folder.\n@return true if the save was successful" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_SaveGestures_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "SaveGestures", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_SaveGestures_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_SaveGestures_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_SaveGestures_Statics::GestureTracker_eventSaveGestures_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_SaveGestures_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_SaveGestures_Statics::Function_MetaDataParams) };
@@ -1201,12 +1253,16 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition_Statics::Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "trackIds" },
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * After starting continuous recognition the recognition event will fire every time a recorded gesture is completed.\n    * @param trackIds A list of ids to track (or not, depending on trackIdsIsBlacklist) for recognition\n    * @param trackIdsIsBlacklist trackIds is a blacklist if true, whitelist if false\n    * @param force Force restart tracking even if currently recording/recognizing\n    * @param resetOnRecognized If true, recognition of a gesture will restart immediately after it is recognized, else it will wait until the gesture has stopped being performed\n    */" },
+#endif
 		{ "CPP_Default_force", "false" },
 		{ "CPP_Default_resetOnRecognized", "false" },
 		{ "CPP_Default_trackIdsIsBlacklist", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "After starting continuous recognition the recognition event will fire every time a recorded gesture is completed.\n@param trackIds A list of ids to track (or not, depending on trackIdsIsBlacklist) for recognition\n@param trackIdsIsBlacklist trackIds is a blacklist if true, whitelist if false\n@param force Force restart tracking even if currently recording/recognizing\n@param resetOnRecognized If true, recognition of a gesture will restart immediately after it is recognized, else it will wait until the gesture has stopped being performed" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "StartContinuousRecognition", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition_Statics::GestureTracker_eventStartContinuousRecognition_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition_Statics::Function_MetaDataParams) };
@@ -1274,10 +1330,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture_Statics::Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "drawIds" },
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Start drawing the predicted gesture during recognition\n    * Will use default or last assigned mesh and materials if left blank\n    * IMPORTANT: Materials must have \"Use with spline meshes\" checked\n    * @param mesh                A mesh used for segments of the drawn gesture.\n    * @param baseMaterial        (optional) A material to replace the mesh's material\n    * @param successMaterial     A material to apply to the completed segments of the predicted gesture.\n    * @param drawIds             A array of gesture Ids to draw predictively (or not, depending on the value of drawIdsIsBlackList)\n    * @param drawIdsIsBlacklist  DrawIds is a blacklist if true, whitelist if false\n    */" },
+#endif
 		{ "CPP_Default_drawIdsIsBlacklist", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start drawing the predicted gesture during recognition\nWill use default or last assigned mesh and materials if left blank\nIMPORTANT: Materials must have \"Use with spline meshes\" checked\n@param mesh                A mesh used for segments of the drawn gesture.\n@param baseMaterial        (optional) A material to replace the mesh's material\n@param successMaterial     A material to apply to the completed segments of the predicted gesture.\n@param drawIds             A array of gesture Ids to draw predictively (or not, depending on the value of drawIdsIsBlackList)\n@param drawIdsIsBlacklist  DrawIds is a blacklist if true, whitelist if false" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "StartDrawPredictedGesture", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture_Statics::GestureTracker_eventStartDrawPredictedGesture_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture_Statics::Function_MetaDataParams) };
@@ -1316,9 +1376,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Start drawing the gesture that is currently being tracked\n    * Will use the default or last assigned mesh and materials if left blank\n    * IMPORTANT: Materials must have \"Use with spline meshes\" checked\n    * @param mesh            A mesh used for segments of the drawn gesture.\n    * @param baseMaterial    (optional) A material to replace the mesh's material\n    * @param successMaterial A material to apply when the tracked gesture is recognized.\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start drawing the gesture that is currently being tracked\nWill use the default or last assigned mesh and materials if left blank\nIMPORTANT: Materials must have \"Use with spline meshes\" checked\n@param mesh            A mesh used for segments of the drawn gesture.\n@param baseMaterial    (optional) A material to replace the mesh's material\n@param successMaterial A material to apply when the tracked gesture is recognized." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "StartDrawTrackedGesture", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture_Statics::GestureTracker_eventStartDrawTrackedGesture_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture_Statics::Function_MetaDataParams) };
@@ -1383,11 +1447,15 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_StartRecognition_Statics::Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "trackIds" },
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n     * Initialize tracking to start recognizing a gesture\n     * @param trackIds A list of ids to track (or not, depending on trackIdsIsBlacklist) for recognition\n     * @param trackIdsIsBlacklist trackIds is a blacklist if true, whitelist if false\n     * @param force Force restart tracking even if currently recording/recognizing\n     */" },
+#endif
 		{ "CPP_Default_force", "false" },
 		{ "CPP_Default_trackIdsIsBlacklist", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Initialize tracking to start recognizing a gesture\n@param trackIds A list of ids to track (or not, depending on trackIdsIsBlacklist) for recognition\n@param trackIdsIsBlacklist trackIds is a blacklist if true, whitelist if false\n@param force Force restart tracking even if currently recording/recognizing" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_StartRecognition_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "StartRecognition", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_StartRecognition_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartRecognition_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_StartRecognition_Statics::GestureTracker_eventStartRecognition_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartRecognition_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_StartRecognition_Statics::Function_MetaDataParams) };
@@ -1427,10 +1495,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_StartRecording_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Initialize tracking to start recording a gesture\n    * @param force Force restart tracking even if currently recording/recognizing\n    */" },
+#endif
 		{ "CPP_Default_force", "false" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Initialize tracking to start recording a gesture\n@param force Force restart tracking even if currently recording/recognizing" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_StartRecording_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "StartRecording", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_StartRecording_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartRecording_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_StartRecording_Statics::GestureTracker_eventStartRecording_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StartRecording_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_StartRecording_Statics::Function_MetaDataParams) };
@@ -1478,9 +1550,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_StopDrawPredictedGesture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Stop drawing the predicted gesture during recognition\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop drawing the predicted gesture during recognition" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_StopDrawPredictedGesture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "StopDrawPredictedGesture", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StopDrawPredictedGesture_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_StopDrawPredictedGesture_Statics::Function_MetaDataParams) };
@@ -1503,9 +1579,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_StopDrawTrackedGesture_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Stop drawing the gesture that is currently being tracked\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop drawing the gesture that is currently being tracked" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_StopDrawTrackedGesture_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "StopDrawTrackedGesture", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_StopDrawTrackedGesture_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_StopDrawTrackedGesture_Statics::Function_MetaDataParams) };
@@ -1559,10 +1639,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_UpdateDrawIds_Statics::Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "drawIds" },
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Use to update the drawIds at any time so that you can start/stop\n    * drawing a gesture in the middle of recognition\n    */" },
+#endif
 		{ "CPP_Default_drawIdsIsBlacklist", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to update the drawIds at any time so that you can start/stop\ndrawing a gesture in the middle of recognition" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_UpdateDrawIds_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "UpdateDrawIds", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_UpdateDrawIds_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdateDrawIds_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_UpdateDrawIds_Statics::GestureTracker_eventUpdateDrawIds_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdateDrawIds_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_UpdateDrawIds_Statics::Function_MetaDataParams) };
@@ -1605,9 +1689,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Update the predicted gesture draw materials with the supplied ones.\n    * Leave an input blank to leave it unchanged.\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update the predicted gesture draw materials with the supplied ones.\nLeave an input blank to leave it unchanged." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "UpdatePredictDrawMaterials", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials_Statics::GestureTracker_eventUpdatePredictDrawMaterials_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials_Statics::Function_MetaDataParams) };
@@ -1646,9 +1734,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials_Statics::Function_MetaDataParams[] = {
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Update tracking gesture draw materials with the supplied ones.\n    * Leave an input blank to leave it unchanged.\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Update tracking gesture draw materials with the supplied ones.\nLeave an input blank to leave it unchanged." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "UpdateTrackDrawMaterials", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials_Statics::GestureTracker_eventUpdateTrackDrawMaterials_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials_Statics::Function_MetaDataParams) };
@@ -1704,10 +1796,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UGestureTracker_UpdateTrackIds_Statics::Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "trackIds" },
 		{ "Category", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Use to update the trackIds at any time so that you can stop\n    * recognizing a gesture in the middle of recognition, and start/stop\n    * recognizing gestures during continuous recognition.\n    */" },
+#endif
 		{ "CPP_Default_trackIdsIsBlacklist", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use to update the trackIds at any time so that you can stop\nrecognizing a gesture in the middle of recognition, and start/stop\nrecognizing gestures during continuous recognition." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UGestureTracker_UpdateTrackIds_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UGestureTracker, nullptr, "UpdateTrackIds", nullptr, nullptr, Z_Construct_UFunction_UGestureTracker_UpdateTrackIds_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdateTrackIds_Statics::PropPointers), sizeof(Z_Construct_UFunction_UGestureTracker_UpdateTrackIds_Statics::GestureTracker_eventUpdateTrackIds_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UGestureTracker_UpdateTrackIds_Statics::Function_MetaDataParams), Z_Construct_UFunction_UGestureTracker_UpdateTrackIds_Statics::Function_MetaDataParams) };
@@ -1903,31 +1999,31 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UGestureTracker_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UGestureTracker_ClearGestures, "ClearGestures" }, // 1364023653
-		{ &Z_Construct_UFunction_UGestureTracker_DrawGestureById, "DrawGestureById" }, // 3721785947
-		{ &Z_Construct_UFunction_UGestureTracker_DrawGestureByName, "DrawGestureByName" }, // 708577973
-		{ &Z_Construct_UFunction_UGestureTracker_FinishRecognition, "FinishRecognition" }, // 1999293411
-		{ &Z_Construct_UFunction_UGestureTracker_FinishRecording, "FinishRecording" }, // 1148524611
-		{ &Z_Construct_UFunction_UGestureTracker_GetGesturePath, "GetGesturePath" }, // 1962516902
-		{ &Z_Construct_UFunction_UGestureTracker_GetIds, "GetIds" }, // 3710853192
-		{ &Z_Construct_UFunction_UGestureTracker_GetNumGestures, "GetNumGestures" }, // 1549620310
-		{ &Z_Construct_UFunction_UGestureTracker_GetPercentageComplete, "GetPercentageComplete" }, // 439212330
-		{ &Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId, "GetPredictedGestureId" }, // 861255570
-		{ &Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath, "GetPredictedGesturePath" }, // 3295507142
-		{ &Z_Construct_UFunction_UGestureTracker_LoadGestures, "LoadGestures" }, // 3564779201
-		{ &Z_Construct_UFunction_UGestureTracker_SaveGestures, "SaveGestures" }, // 3491496735
-		{ &Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition, "StartContinuousRecognition" }, // 492122786
-		{ &Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture, "StartDrawPredictedGesture" }, // 1834835786
-		{ &Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture, "StartDrawTrackedGesture" }, // 948276148
-		{ &Z_Construct_UFunction_UGestureTracker_StartRecognition, "StartRecognition" }, // 1215677387
-		{ &Z_Construct_UFunction_UGestureTracker_StartRecording, "StartRecording" }, // 504762044
+		{ &Z_Construct_UFunction_UGestureTracker_ClearGestures, "ClearGestures" }, // 3294626143
+		{ &Z_Construct_UFunction_UGestureTracker_DrawGestureById, "DrawGestureById" }, // 1156269919
+		{ &Z_Construct_UFunction_UGestureTracker_DrawGestureByName, "DrawGestureByName" }, // 3085994014
+		{ &Z_Construct_UFunction_UGestureTracker_FinishRecognition, "FinishRecognition" }, // 934483897
+		{ &Z_Construct_UFunction_UGestureTracker_FinishRecording, "FinishRecording" }, // 3683904989
+		{ &Z_Construct_UFunction_UGestureTracker_GetGesturePath, "GetGesturePath" }, // 2779681532
+		{ &Z_Construct_UFunction_UGestureTracker_GetIds, "GetIds" }, // 1449558173
+		{ &Z_Construct_UFunction_UGestureTracker_GetNumGestures, "GetNumGestures" }, // 1336644616
+		{ &Z_Construct_UFunction_UGestureTracker_GetPercentageComplete, "GetPercentageComplete" }, // 2733216716
+		{ &Z_Construct_UFunction_UGestureTracker_GetPredictedGestureId, "GetPredictedGestureId" }, // 2284720186
+		{ &Z_Construct_UFunction_UGestureTracker_GetPredictedGesturePath, "GetPredictedGesturePath" }, // 2735230805
+		{ &Z_Construct_UFunction_UGestureTracker_LoadGestures, "LoadGestures" }, // 1842186060
+		{ &Z_Construct_UFunction_UGestureTracker_SaveGestures, "SaveGestures" }, // 3834328985
+		{ &Z_Construct_UFunction_UGestureTracker_StartContinuousRecognition, "StartContinuousRecognition" }, // 216456147
+		{ &Z_Construct_UFunction_UGestureTracker_StartDrawPredictedGesture, "StartDrawPredictedGesture" }, // 984268938
+		{ &Z_Construct_UFunction_UGestureTracker_StartDrawTrackedGesture, "StartDrawTrackedGesture" }, // 276202811
+		{ &Z_Construct_UFunction_UGestureTracker_StartRecognition, "StartRecognition" }, // 1694796241
+		{ &Z_Construct_UFunction_UGestureTracker_StartRecording, "StartRecording" }, // 18539560
 		{ &Z_Construct_UFunction_UGestureTracker_StopContinuousRecognition, "StopContinuousRecognition" }, // 3886386114
-		{ &Z_Construct_UFunction_UGestureTracker_StopDrawPredictedGesture, "StopDrawPredictedGesture" }, // 560032075
-		{ &Z_Construct_UFunction_UGestureTracker_StopDrawTrackedGesture, "StopDrawTrackedGesture" }, // 4286279653
-		{ &Z_Construct_UFunction_UGestureTracker_UpdateDrawIds, "UpdateDrawIds" }, // 3624419806
-		{ &Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials, "UpdatePredictDrawMaterials" }, // 3180739003
-		{ &Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials, "UpdateTrackDrawMaterials" }, // 289873387
-		{ &Z_Construct_UFunction_UGestureTracker_UpdateTrackIds, "UpdateTrackIds" }, // 3797574695
+		{ &Z_Construct_UFunction_UGestureTracker_StopDrawPredictedGesture, "StopDrawPredictedGesture" }, // 146786001
+		{ &Z_Construct_UFunction_UGestureTracker_StopDrawTrackedGesture, "StopDrawTrackedGesture" }, // 3956671541
+		{ &Z_Construct_UFunction_UGestureTracker_UpdateDrawIds, "UpdateDrawIds" }, // 901140116
+		{ &Z_Construct_UFunction_UGestureTracker_UpdatePredictDrawMaterials, "UpdatePredictDrawMaterials" }, // 3936693152
+		{ &Z_Construct_UFunction_UGestureTracker_UpdateTrackDrawMaterials, "UpdateTrackDrawMaterials" }, // 3314253078
+		{ &Z_Construct_UFunction_UGestureTracker_UpdateTrackIds, "UpdateTrackIds" }, // 956448593
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -1935,39 +2031,55 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "GestureTrackerVR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n* Gesture Tracker provides gesture recognition and drawing.\n* Attach it to your motion controller component (or any moving component)\n* and setup inputs for its Record/Recognition/Draw functions.\n* Check the parameters in the details panel to tweak tracking, recognition, and drawing.\n*/" },
+#endif
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "GestureTracker.h" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gesture Tracker provides gesture recognition and drawing.\nAttach it to your motion controller component (or any moving component)\nand setup inputs for its Record/Recognition/Draw functions.\nCheck the parameters in the details panel to tweak tracking, recognition, and drawing." },
+#endif
 	};
 #endif
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_ContinuousGestureRecognized_MetaData[] = {
 		{ "Category", "Recognition Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Triggered whenever a gesture is recognized during continuous recognition.\n    * @param id   The id of the recognized gesture\n    * @param name The name of the recognized gesture\n    * @param recognitionDuration The duration of the recognition period in seconds (approximately from the time the player started the gesture to when it was recognized).\n    * @param lengthRatio The ratio of the tracked gesture length to the reference gesture length (e.g. 2 means the tracked gesture was twice as long as the recognized reference).\n    */" },
+#endif
 		{ "DisplayName", "Continuous Recognition Gesture Recognized" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Triggered whenever a gesture is recognized during continuous recognition.\n@param id   The id of the recognized gesture\n@param name The name of the recognized gesture\n@param recognitionDuration The duration of the recognition period in seconds (approximately from the time the player started the gesture to when it was recognized).\n@param lengthRatio The ratio of the tracked gesture length to the reference gesture length (e.g. 2 means the tracked gesture was twice as long as the recognized reference)." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_ContinuousGestureRecognized = { "ContinuousGestureRecognized", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, ContinuousGestureRecognized), Z_Construct_UDelegateFunction_GestureTrackerVR_GestureRecognizedDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_ContinuousGestureRecognized_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_ContinuousGestureRecognized_MetaData) }; // 1405201120
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_GestureRecognized_MetaData[] = {
 		{ "Category", "Recognition Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Triggered whenever a gesture is recognized during normal recognition.\n    * Can be used to trigger a gesture effect as soon as a gesture is detected instead\n    * of when FinishRecognition is called. Multiple gestures may be recognized during one\n    * recognition period (e.g. another gesture is a prefix of the one being tracked).\n    * @param id   The id of the recognized gesture\n    * @param name The name of the recognized gesture\n    * @param recognitionDuration The duration of the recognition period in seconds (from StartRecognition() to when the gesture was recognized).\n    * @param lengthRatio The ratio of the tracked gesture length to the reference gesture length (e.g. 2 means the tracked gesture was twice as long as the recognized reference).\n    */" },
+#endif
 		{ "DisplayName", "Regular Recognition Gesture Recognized" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Triggered whenever a gesture is recognized during normal recognition.\nCan be used to trigger a gesture effect as soon as a gesture is detected instead\nof when FinishRecognition is called. Multiple gestures may be recognized during one\nrecognition period (e.g. another gesture is a prefix of the one being tracked).\n@param id   The id of the recognized gesture\n@param name The name of the recognized gesture\n@param recognitionDuration The duration of the recognition period in seconds (from StartRecognition() to when the gesture was recognized).\n@param lengthRatio The ratio of the tracked gesture length to the reference gesture length (e.g. 2 means the tracked gesture was twice as long as the recognized reference)." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_GestureRecognized = { "GestureRecognized", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, GestureRecognized), Z_Construct_UDelegateFunction_GestureTrackerVR_GestureRecognizedDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_GestureRecognized_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_GestureRecognized_MetaData) }; // 1405201120
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bUseWorldLocation_MetaData[] = {
 		{ "Category", "Parameters|Tracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Use the Gesture Tracker's: world location for tracking if true\n    *                          : location relative to the attach root if false\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Use the Gesture Tracker's: world location for tracking if true\n                         : location relative to the attach root if false" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bUseWorldLocation_SetBit(void* Obj)
@@ -1978,11 +2090,15 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_BodyLocationComponent_MetaData[] = {
 		{ "Category", "Parameters|Tracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * If None (default) the gesturing orientation will be interpreted using the GestureTracker rotation. \n    * If set, will override normal orientation detection and use the rotation from the BodyLocationComponent\n    * to the GestureTracker to orient gestures. This will keep orientation more consistent when switching between \n    * different motion controller orientations. \n    * For example, if a player is pointing the controller forward but holding it with a 90 degree twist in their \n    * wrist the GestureTracker will think they're pointing left. Setting this component will resolve this issue.\n    * Generally you should set this to point to your pawn's Camera.\n    * @note RotationOffset will still apply if this is set.\n    */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
 		{ "NativeConst", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If None (default) the gesturing orientation will be interpreted using the GestureTracker rotation.\nIf set, will override normal orientation detection and use the rotation from the BodyLocationComponent\nto the GestureTracker to orient gestures. This will keep orientation more consistent when switching between\ndifferent motion controller orientations.\nFor example, if a player is pointing the controller forward but holding it with a 90 degree twist in their\nwrist the GestureTracker will think they're pointing left. Setting this component will resolve this issue.\nGenerally you should set this to point to your pawn's Camera.\n@note RotationOffset will still apply if this is set." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_BodyLocationComponent = { "BodyLocationComponent", nullptr, (EPropertyFlags)0x001000000008200c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, BodyLocationComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_BodyLocationComponent_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_BodyLocationComponent_MetaData) };
@@ -1991,20 +2107,28 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Tracking" },
 		{ "ClampMax", "20" },
 		{ "ClampMin", "0.250000" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * The number of units between each recorded gesture point (or the length of a segment of the gesture)\n    * Smaller values mean a finer resolution, less performance.\n    * It is highly recommended that you keep this above 1. If you record every .25 units you'll be recording\n    * movements as small as the shaking of a person's hand and using up a lot of resources unnecessarily.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The number of units between each recorded gesture point (or the length of a segment of the gesture)\nSmaller values mean a finer resolution, less performance.\nIt is highly recommended that you keep this above 1. If you record every .25 units you'll be recording\nmovements as small as the shaking of a person's hand and using up a lot of resources unnecessarily." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_gestureResolution = { "gestureResolution", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, gestureResolution), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_gestureResolution_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_gestureResolution_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bNormalizePitchRotation_MetaData[] = {
 		{ "Category", "Parameters|Tracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * If true, rotation of gestures will be normalized by pitch (looking up or down) in addition to yaw.\n    * e.g. A forward punch gesture will be recognized if you punch up.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, rotation of gestures will be normalized by pitch (looking up or down) in addition to yaw.\ne.g. A forward punch gesture will be recognized if you punch up." },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bNormalizePitchRotation_SetBit(void* Obj)
@@ -2015,11 +2139,15 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bUseBodyLocationForPitch_MetaData[] = {
 		{ "Category", "Parameters|Tracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * If BodyLocationComponent is set and we're normalizing pitch rotation, this sets whether pitch should be determined by the\n    * GestureTracker rotation or the angle from the GestureTracker to the BodyLocationComponent. Using the BodyLocation\n    * for pitch is probably undesirable if you've set BodyLocationComponent to point to your VR camera since your hands\n    * are around 40 degrees below the camera at rest, so the standard pitch will be around -40 instead of around 0.\n    * This won't be a problem if gestures are recorded with this set to true since that -40 pitch bias will be in both\n    * the recorded and tracked gestures.\n    */" },
+#endif
 		{ "EditCondition", "bNormalizePitchRotation" },
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If BodyLocationComponent is set and we're normalizing pitch rotation, this sets whether pitch should be determined by the\nGestureTracker rotation or the angle from the GestureTracker to the BodyLocationComponent. Using the BodyLocation\nfor pitch is probably undesirable if you've set BodyLocationComponent to point to your VR camera since your hands\nare around 40 degrees below the camera at rest, so the standard pitch will be around -40 instead of around 0.\nThis won't be a problem if gestures are recorded with this set to true since that -40 pitch bias will be in both\nthe recorded and tracked gestures." },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bUseBodyLocationForPitch_SetBit(void* Obj)
@@ -2032,20 +2160,28 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Tracking" },
 		{ "ClampMax", "180" },
 		{ "ClampMin", "-180" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Offset the yaw rotation of performed gestures by this many degrees, useful if the gesture\n    * tracker is pointing in a different direction than the player will be for any reason.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Offset the yaw rotation of performed gestures by this many degrees, useful if the gesture\ntracker is pointing in a different direction than the player will be for any reason." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_rotationOffset = { "rotationOffset", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, rotationOffset), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_rotationOffset_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_rotationOffset_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bUseSystemTime_MetaData[] = {
 		{ "Category", "Parameters|Tracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Timing information will use system time if true, game time if false\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Timing information will use system time if true, game time if false" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bUseSystemTime_SetBit(void* Obj)
@@ -2058,9 +2194,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recording" },
 		{ "ClampMax", "200" },
 		{ "ClampMin", "2" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Minimum length of a recorded gesture in units\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Minimum length of a recorded gesture in units" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_minGestureLength = { "minGestureLength", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, minGestureLength), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_minGestureLength_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_minGestureLength_MetaData) };
@@ -2069,9 +2209,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recording" },
 		{ "ClampMax", "1000" },
 		{ "ClampMin", "2" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Maximum length of a recorded gesture in units\n    */" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Maximum length of a recorded gesture in units" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_maxGestureLength = { "maxGestureLength", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, maxGestureLength), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_maxGestureLength_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_maxGestureLength_MetaData) };
@@ -2080,10 +2224,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "-1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Gesture similarity value above which recognition will be acceptable.\n    * If a tracked gesture is acceptably similar to the current portion\n    * of a reference gesture then recognition will progress to the next \n    * portion of that gesture.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gesture similarity value above which recognition will be acceptable.\nIf a tracked gesture is acceptably similar to the current portion\nof a reference gesture then recognition will progress to the next\nportion of that gesture." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_acceptableSimilarity = { "acceptableSimilarity", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, acceptableSimilarity), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_acceptableSimilarity_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_acceptableSimilarity_MetaData) };
@@ -2092,10 +2240,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "-1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Gesture similarity value below which recognition be rejected.\n    * If a tracked gesture is unacceptably similar to the current \n    * portion of a reference gesture for too long then that gesture\n    * will be disqualified.\n    * Completed gestures will also be disqualified in this way.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gesture similarity value below which recognition be rejected.\nIf a tracked gesture is unacceptably similar to the current\nportion of a reference gesture for too long then that gesture\nwill be disqualified.\nCompleted gestures will also be disqualified in this way." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_unacceptableSimilarity = { "unacceptableSimilarity", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, unacceptableSimilarity), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_unacceptableSimilarity_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_unacceptableSimilarity_MetaData) };
@@ -2104,10 +2256,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * The ratio of the maximum size of the recognized gesture to the tracked gesture for regular recognition.\n    * One unit of the tracked gesture can represent up to ratio units of a reference gesture.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ratio of the maximum size of the recognized gesture to the tracked gesture for regular recognition.\nOne unit of the tracked gesture can represent up to ratio units of a reference gesture." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackRecognitionRatio = { "trackRecognitionRatio", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, trackRecognitionRatio), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackRecognitionRatio_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackRecognitionRatio_MetaData) };
@@ -2116,10 +2272,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Same as trackRecognitionRatio but for continuous recognition\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Same as trackRecognitionRatio but for continuous recognition" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_continuousRecognitionRatio = { "continuousRecognitionRatio", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, continuousRecognitionRatio), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_continuousRecognitionRatio_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_continuousRecognitionRatio_MetaData) };
@@ -2127,10 +2287,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackFailDistance_MetaData[] = {
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * The distance you can go off the gesture path before a gesture will fail recognition\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The distance you can go off the gesture path before a gesture will fail recognition" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackFailDistance = { "trackFailDistance", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, trackFailDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackFailDistance_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackFailDistance_MetaData) };
@@ -2138,10 +2302,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_continuousFailDistance_MetaData[] = {
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Same as trackFailDistance but for continuous recognition\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Same as trackFailDistance but for continuous recognition" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_continuousFailDistance = { "continuousFailDistance", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, continuousFailDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_continuousFailDistance_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_continuousFailDistance_MetaData) };
@@ -2150,10 +2318,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMax", "50" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Length of the portion of a gesture that will be checked for acceptable similarity \n    * to the currently tracked gesture. If the gesture motion being tracked is acceptably\n    * similar to any part of the reference portion then recognition will progress.\n    * \n    * Effectively smooths tracking so that players don't have to perfectly mimick sharp corners.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Length of the portion of a gesture that will be checked for acceptable similarity\nto the currently tracked gesture. If the gesture motion being tracked is acceptably\nsimilar to any part of the reference portion then recognition will progress.\n\nEffectively smooths tracking so that players don't have to perfectly mimick sharp corners." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_smoothing = { "smoothing", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, smoothing), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_smoothing_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_smoothing_MetaData) };
@@ -2162,10 +2334,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * Number of units the tracker can move before any potential gestures can be disqualified\n    * during normal recognition. Lets players move randomly for a bit after recognition starts\n    * so they don't have to begin performing the gesture the moment they trigger recognition.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Number of units the tracker can move before any potential gestures can be disqualified\nduring normal recognition. Lets players move randomly for a bit after recognition starts\nso they don't have to begin performing the gesture the moment they trigger recognition." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_patience = { "patience", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, patience), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_patience_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_patience_MetaData) };
@@ -2174,10 +2350,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Recognition" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * The percentage of a reference gesture that must be completed to be recognized\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The percentage of a reference gesture that must be completed to be recognized" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_completionPercentage = { "completionPercentage", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, completionPercentage), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_completionPercentage_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_completionPercentage_MetaData) };
@@ -2186,10 +2366,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Drawing" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * The maximum length of the tracked gesture mesh in units. \n    * The end of the tracked gesture will start being erased past this length.\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The maximum length of the tracked gesture mesh in units.\nThe end of the tracked gesture will start being erased past this length." },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_maxTrackDrawDistance = { "maxTrackDrawDistance", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, maxTrackDrawDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_maxTrackDrawDistance_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_maxTrackDrawDistance_MetaData) };
@@ -2198,10 +2382,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Drawing" },
 		{ "ClampMax", "1" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * The percentage of a gesture that must be completed before it can be the predicted gesture\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The percentage of a gesture that must be completed before it can be the predicted gesture" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictPercentage = { "predictPercentage", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, predictPercentage), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictPercentage_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictPercentage_MetaData) };
@@ -2210,10 +2398,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 		{ "Category", "Parameters|Drawing" },
 		{ "ClampMax", "100" },
 		{ "ClampMin", "1" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n    * The distance in units ahead of your current recognition progress that the predicted gesture will be drawn\n    * This is the \"ghost\" image displayed during predictive drawing with the default materials\n    */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The distance in units ahead of your current recognition progress that the predicted gesture will be drawn\nThis is the \"ghost\" image displayed during predictive drawing with the default materials" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictDistance = { "predictDistance", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, predictDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictDistance_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictDistance_MetaData) };
@@ -2221,9 +2413,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bTracking_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Tracking Status Booleans" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// true if any tracking mode is active (recording, regular/continuous recognition)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "true if any tracking mode is active (recording, regular/continuous recognition)" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bTracking_SetBit(void* Obj)
@@ -2235,9 +2431,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bRecording_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Tracking Status Booleans" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// true if recording is active\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "true if recording is active" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bRecording_SetBit(void* Obj)
@@ -2249,9 +2449,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bContinuous_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Tracking Status Booleans" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// true if continuous recognition is active\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "true if continuous recognition is active" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bContinuous_SetBit(void* Obj)
@@ -2263,9 +2467,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bContinuousResetOnRecognized_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Tracking Status Booleans" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// if true, recognition resets immediately after finishing a gesture during continuous recognition\n// if false, recognition resets only when a gesture has stopped being performed\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "if true, recognition resets immediately after finishing a gesture during continuous recognition\nif false, recognition resets only when a gesture has stopped being performed" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bContinuousResetOnRecognized_SetBit(void* Obj)
@@ -2277,9 +2485,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bDrawingTracked_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Tracking Status Booleans" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// true if the tracked gesture will be drawn during tracking\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "true if the tracked gesture will be drawn during tracking" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bDrawingTracked_SetBit(void* Obj)
@@ -2291,9 +2503,13 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_bDrawingPredicted_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Tracking Status Booleans" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// true if the predicted gesture will be drawn during recognition\n" },
+#endif
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "true if the predicted gesture will be drawn during recognition" },
+#endif
 	};
 #endif
 	void Z_Construct_UClass_UGestureTracker_Statics::NewProp_bDrawingPredicted_SetBit(void* Obj)
@@ -2312,10 +2528,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackGestureMesh_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Draw Meshes" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The gesture mesh object for tracked drawing\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The gesture mesh object for tracked drawing" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackGestureMesh = { "trackGestureMesh", nullptr, (EPropertyFlags)0x004000000008001c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, trackGestureMesh), Z_Construct_UClass_UGestureMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackGestureMesh_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_trackGestureMesh_MetaData) };
@@ -2323,10 +2543,14 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictGestureMesh_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Draw Meshes" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The gesture mesh object for predictive drawing\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/GestureTracker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The gesture mesh object for predictive drawing" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictGestureMesh = { "predictGestureMesh", nullptr, (EPropertyFlags)0x004000000008001c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UGestureTracker, predictGestureMesh), Z_Construct_UClass_UGestureMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictGestureMesh_MetaData), Z_Construct_UClass_UGestureTracker_Statics::NewProp_predictGestureMesh_MetaData) };
@@ -2433,21 +2657,21 @@ void FGestureRecognizedDelegate_DelegateWrapper(const FMulticastScriptDelegate& 
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UGestureTracker);
 	UGestureTracker::~UGestureTracker() {}
-	struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::EnumInfo[] = {
 		{ EGestureRecordResult_StaticEnum, TEXT("EGestureRecordResult"), &Z_Registration_Info_UEnum_EGestureRecordResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4118537414U) },
 		{ EGestureRecognizeResult_StaticEnum, TEXT("EGestureRecognizeResult"), &Z_Registration_Info_UEnum_EGestureRecognizeResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1330622487U) },
 		{ EGestureLibFunctionResult_StaticEnum, TEXT("EGestureLibFunctionResult"), &Z_Registration_Info_UEnum_EGestureLibFunctionResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4064942061U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UGestureTracker, UGestureTracker::StaticClass, TEXT("UGestureTracker"), &Z_Registration_Info_UClass_UGestureTracker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGestureTracker), 3676158408U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UGestureTracker, UGestureTracker::StaticClass, TEXT("UGestureTracker"), &Z_Registration_Info_UClass_UGestureTracker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UGestureTracker), 3040470832U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_803987340(TEXT("/Script/GestureTrackerVR"),
-		Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_292368768(TEXT("/Script/GestureTrackerVR"),
+		Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_GestureTrackerVR_Source_GestureTrackerVR_Public_GestureTracker_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

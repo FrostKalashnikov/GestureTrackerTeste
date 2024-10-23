@@ -101,9 +101,13 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVrPrintString_Library_Clear_All_VR_Prints_Statics::Function_MetaDataParams[] = {
 		{ "CallableWithoutWorldContext", "" },
 		{ "Category", "VR Print String" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Clears all prints from view\n" },
+#endif
 		{ "ModuleRelativePath", "Public/VrPrintString_Library.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Clears all prints from view" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
@@ -160,10 +164,14 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UVrPrintString_Library_Remove_VR_Print_By_Key_Statics::Function_MetaDataParams[] = {
 		{ "CallableWithoutWorldContext", "" },
 		{ "Category", "VR Print String" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Removes a specific print according to the key\n\x09* @param\x09Key\x09\x09Print key to be removed\n\x09*/" },
+#endif
 		{ "CPP_Default_Key", "None" },
 		{ "ModuleRelativePath", "Public/VrPrintString_Library.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Removes a specific print according to the key\n@param        Key             Print key to be removed" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
@@ -259,7 +267,9 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 		{ "AdvancedDisplay", "3" },
 		{ "CallableWithoutWorldContext", "" },
 		{ "Category", "VR Print String" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Prints a string to the VR view, and optionally, to the Log\n\x09* @param\x09InString\x09\x09\x09The string to log out\n\x09* @param\x09""Duration\x09\x09\x09The display duration\n\x09* @param\x09""Color\x09\x09\x09\x09The color of the text to display\n\x09* @param\x09Key\x09\x09\x09\x09\x09If a non-empty key is provided, the message will replace any existing on-screen messages with the same key.\n\x09* @param\x09""bShowKeyInPrint\x09\x09Whether or not to print the output of the string along with the key. example: \"Key : String\"\n\x09* @param\x09""bPrintToLog\x09\x09\x09Whether or not to print the output to the log\n\x09*/" },
+#endif
 		{ "CPP_Default_bPrintToLog", "true" },
 		{ "CPP_Default_bShowKeyInPrint", "false" },
 		{ "CPP_Default_Color", "(R=0.000000,G=0.660000,B=1.000000,A=1.000000)" },
@@ -268,7 +278,9 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 		{ "CPP_Default_Key", "None" },
 		{ "Keywords", "vr print" },
 		{ "ModuleRelativePath", "Public/VrPrintString_Library.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Prints a string to the VR view, and optionally, to the Log\n@param        InString                        The string to log out\n@param        Duration                        The display duration\n@param        Color                           The color of the text to display\n@param        Key                                     If a non-empty key is provided, the message will replace any existing on-screen messages with the same key.\n@param        bShowKeyInPrint         Whether or not to print the output of the string along with the key. example: \"Key : String\"\n@param        bPrintToLog                     Whether or not to print the output to the log" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
@@ -364,7 +376,9 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 		{ "AdvancedDisplay", "3" },
 		{ "CallableWithoutWorldContext", "" },
 		{ "Category", "VR Print String" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09* Prints a string to the VR view, and optionally, to the Log\n\x09* @param\x09InString\x09\x09\x09The string to log out\n\x09* @param\x09""Duration\x09\x09\x09The display duration\n\x09* @param\x09""Color\x09\x09\x09\x09The color of the text to display\n\x09* @param\x09Key\x09\x09\x09\x09\x09If a non-empty key is provided, the message will replace any existing on-screen messages with the same key.\n\x09* @param\x09""bShowKeyInPrint\x09\x09Whether or not to print the output of the string along with the key. example: \"Key : String\"\n\x09* @param\x09""bPrintToLog\x09\x09\x09Whether or not to print the output to the log\n\x09*/" },
+#endif
 		{ "CPP_Default_bPrintToLog", "true" },
 		{ "CPP_Default_bShowKeyInPrint", "false" },
 		{ "CPP_Default_Color", "(R=0.000000,G=0.660000,B=1.000000,A=1.000000)" },
@@ -374,7 +388,9 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 		{ "DevelopmentOnly", "" },
 		{ "Keywords", "vr print devonly" },
 		{ "ModuleRelativePath", "Public/VrPrintString_Library.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Prints a string to the VR view, and optionally, to the Log\n@param        InString                        The string to log out\n@param        Duration                        The display duration\n@param        Color                           The color of the text to display\n@param        Key                                     If a non-empty key is provided, the message will replace any existing on-screen messages with the same key.\n@param        bShowKeyInPrint         Whether or not to print the output of the string along with the key. example: \"Key : String\"\n@param        bPrintToLog                     Whether or not to print the output to the log" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif
@@ -411,10 +427,10 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UVrPrintString_Library_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_UVrPrintString_Library_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UVrPrintString_Library_Clear_All_VR_Prints, "Clear_All_VR_Prints" }, // 3486804459
-		{ &Z_Construct_UFunction_UVrPrintString_Library_Remove_VR_Print_By_Key, "Remove_VR_Print_By_Key" }, // 2310769420
-		{ &Z_Construct_UFunction_UVrPrintString_Library_VR_Print_String, "VR_Print_String" }, // 697114650
-		{ &Z_Construct_UFunction_UVrPrintString_Library_VR_Print_String_DevOnly, "VR_Print_String_DevOnly" }, // 2181039724
+		{ &Z_Construct_UFunction_UVrPrintString_Library_Clear_All_VR_Prints, "Clear_All_VR_Prints" }, // 3613330166
+		{ &Z_Construct_UFunction_UVrPrintString_Library_Remove_VR_Print_By_Key, "Remove_VR_Print_By_Key" }, // 3274444174
+		{ &Z_Construct_UFunction_UVrPrintString_Library_VR_Print_String, "VR_Print_String" }, // 299700562
+		{ &Z_Construct_UFunction_UVrPrintString_Library_VR_Print_String_DevOnly, "VR_Print_String_DevOnly" }, // 2675732451
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UVrPrintString_Library_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -456,15 +472,15 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Library() {}
 	UVrPrintString_Library::UVrPrintString_Library(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UVrPrintString_Library);
 	UVrPrintString_Library::~UVrPrintString_Library() {}
-	struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVrPrintString_Library, UVrPrintString_Library::StaticClass, TEXT("UVrPrintString_Library"), &Z_Registration_Info_UClass_UVrPrintString_Library, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVrPrintString_Library), 2460119217U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UVrPrintString_Library, UVrPrintString_Library::StaticClass, TEXT("UVrPrintString_Library"), &Z_Registration_Info_UClass_UVrPrintString_Library, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVrPrintString_Library), 496158419U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_3272091856(TEXT("/Script/VrPrintString"),
-		Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_3755240801(TEXT("/Script/VrPrintString"),
+		Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Library_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

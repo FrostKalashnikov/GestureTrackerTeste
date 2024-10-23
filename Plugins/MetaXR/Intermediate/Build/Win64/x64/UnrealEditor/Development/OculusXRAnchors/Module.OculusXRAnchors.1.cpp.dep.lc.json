@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxranchors\\module.oculusxranchors.1.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\intermediate\\build\\win64\\x64\\gesturetrackertesteeditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxranchors\\definitions.oculusxranchors.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorbpfunctionlibrary.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchorbpfunctionlibrary.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\kismet\\blueprintasyncactionbase.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\blueprintasyncactionbase.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchortypes.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchortypes.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchorcomponents.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorcomponents.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorbpfunctionlibrary.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorcomponent.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchorcomponent.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorcomponent.generated.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorcomponents.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorlatentactions.gen.cpp",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchorlatentactions.h",
+            "c:\\users\\michelbrito\\documents\\unreal projects\\gesturetrackerteste\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorlatentactions.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

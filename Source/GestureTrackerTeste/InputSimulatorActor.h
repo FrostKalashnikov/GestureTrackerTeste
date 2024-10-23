@@ -2,11 +2,16 @@
 
 #pragma once
 
-#include <Windows.h>
-#include <iostream>
+#if PLATFORM_WINDOWS
+	#include <iostream>
+	#include <Windows.h>
+#endif
+
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "InputSimulatorActor.generated.h"
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnKeyPressEvent, FString, KeyPressed);
 
 UCLASS()
 class GESTURETRACKERTESTE_API AInputSimulatorActor : public AActor
@@ -16,6 +21,9 @@ class GESTURETRACKERTESTE_API AInputSimulatorActor : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AInputSimulatorActor();
+
+	UPROPERTY(BlueprintAssignable, Category = InputSimulation)
+	FOnKeyPressEvent OnKeyPressEvent;
 
 protected:
 	// Called when the game starts or when spawned

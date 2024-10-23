@@ -60,9 +60,13 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Settings() {}
 		{ "Category", "Settings" },
 		{ "ClampMax", "800" },
 		{ "ClampMin", "0" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//Size of the area where prints will be displayed\n" },
+#endif
 		{ "ModuleRelativePath", "Public/VrPrintString_Settings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Size of the area where prints will be displayed" },
+#endif
 		{ "UIMax", "800" },
 		{ "UIMin", "0" },
 	};
@@ -112,15 +116,15 @@ void EmptyLinkFunctionForGeneratedCodeVrPrintString_Settings() {}
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UVrPrintString_Settings);
 	UVrPrintString_Settings::~UVrPrintString_Settings() {}
-	struct Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics
+	struct Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UVrPrintString_Settings, UVrPrintString_Settings::StaticClass, TEXT("UVrPrintString_Settings"), &Z_Registration_Info_UClass_UVrPrintString_Settings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVrPrintString_Settings), 2403108635U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_UVrPrintString_Settings, UVrPrintString_Settings::StaticClass, TEXT("UVrPrintString_Settings"), &Z_Registration_Info_UClass_UVrPrintString_Settings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVrPrintString_Settings), 662510237U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_4137833781(TEXT("/Script/VrPrintString"),
-		Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Marketplace_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_2636694820(TEXT("/Script/VrPrintString"),
+		Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_MichelBrito_Documents_Unreal_Projects_GestureTrackerTeste_Plugins_VrPrintString_Source_VRPrintString_Public_VrPrintString_Settings_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
